@@ -1,0 +1,227 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #088178;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/********** Global Styles ************/
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 4rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.375rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* header section */
+#header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 80px;
+background-color: #e3e6f3;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+position: sticky;
+top: o;
+left: 0;
+z-index: 10;
+}
+
+
+#navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+#navbar li a{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+
+#navbar li a:hover ,
+#navbar li a.active{
+  color: var(--primary-color);
+}
+
+#navbar li a:hover::after ,
+#navbar li a.active::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+.head-cart{
+  font-size: 1.3rem;
+}
+
+#mobile{
+  display: none;
+}
+
+#close{
+  display: none;
+}
+
+
+
+/*heo sectoin*/
+
+#img-slider{
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#img-slider .slide img{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  object-position: top right;
+  position: relative;
+  
+}
+
+.info{
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+
+.select-none{
+  user-select: none;
+}
+
+.info h4{
+  padding: 15px;
+}
+
+.info h1{
+  color: var(--primary-color);
+}
+
+.info button{
+  background: url(img/button\ \(1\).png);
+  background-color: transparent;
+  border: 0;
+  padding: 17px 80px 14px 65px;
+  color: var(--primary-color);
+}
+@media screen  {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
